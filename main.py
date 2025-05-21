@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    creator_name = os.environ.get('NAME', 'Nieznany stwórca')
+    creator_name = os.environ.get('NAME', 'stwórcą jest Github')
     return f"Moim stwórcą jest {creator_name}"
 
 if __name__ == '__main__':
